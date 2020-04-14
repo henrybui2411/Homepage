@@ -1,0 +1,84 @@
+$color : #17a2b8;
+
+div ~ h5 {
+  color: $color;
+}
+
+input[type="text"] {
+   background-color: #f8f9fa;
+}
+
+#colorz > .card-title {
+  color: #1a4c77;
+}
+
+div > .card-body{
+  background-color: aliceblue;
+}
+
+h1
+{
+  color: $color;
+}
+.mg-y
+{
+  margin-top: 150px;
+}
+
+%tabled{
+  width: 100%;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  border-collapse: collapse;
+}
+
+.success{
+  @extend %tabled;
+  color: #0c5460;
+  background-color: #bee5eb;
+}
+
+.dark{
+  @extend %tabled;
+  color: #1b1e21;
+  background-color: #c6c8ca;
+}
+
+
+.info{
+  @extend %tabled;
+  color: #155724;
+  background-color: #c3e6cb;
+}
+
+.bg {
+  background-image: url("img0.jpeg");
+  background-position: center;
+  height: 100%;
+  background-size: cover;
+}
+
+@media (max-width: 720px){
+  .jumbotron-text {
+    display: none;
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 1250px){
+  .cards-text {
+    display: none;
+  }
+}
+
+div{
+  h3{
+    color: $color;
+  }
+  h5{
+    margin-bottom : .75rem;
+  }
+  p{
+    color: #6c757d;
+  }
+}
